@@ -1,0 +1,181 @@
+
+/*div- botoes*/
+#div-botoes{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 12%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.9; 
+    background:black;
+
+}
+#div-maisoumenos{
+    height: 20%; 
+    float:bottom;
+}
+#div-inicio{
+    /* background-image: url("fundo.jpg");
+     background-size: 100%;
+     background-repeat: no-repeat;*/
+    background:black;
+    width: 100%;
+    height:90%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+}
+#operadores_all{
+    background:black;
+    width: 100%;
+    height:90%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    display:none;
+}
+#div-obj{
+    background:black;
+    width: 100%;
+    height:90%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    display:none;
+}
+#div-p-reservadas{
+    background:black;
+    width: 100%;
+    height:90%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    display:none;
+}
+
+#div-p-funcoes{
+    background:black;
+    width: 100%;
+    height:90%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    display:none;    
+
+}
+
+#btn-mais, #btn-menos{
+    float:right;
+}
+/* corpo*/
+body{
+    /* background-image: url("fundo.jpg");*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#div-maisoumenos{
+    left:1300px;
+    top:565px;
+}
+
+
+
+button{
+    opacity: 0.9;
+
+}
+
+
+#operadores_atribuicao{
+    padding: 5px;
+    background:black;
+    height:130px;
+    width:1250px;
+    position:absolute;  
+    display:none;
+    left:20px;
+    top:350px;
+
+}
+
+
+
+
+
+#variaveis{
+    padding: 5px;
+    background:black;
+    height:130px;
+    width:1250px;
+    position:absolute;  
+    display:none;
+    left:20px;
+    top:350px;
+
+}
+
+
+/*buttons voltar*/
+#btn_voltar_operadores{
+
+    left:1190px;
+    top:5px;
+    height:50px;
+    width: 50px;
+    float: right;
+    background-image:url("btn_voltar.png");
+    background-repeat: no-repeat;
+}
+
+#btn_voltar_obj{
+    left:1190px;
+    top:5px;
+    height:50px;
+    width: 50px;
+    float: right;
+    background-image:url("btn_voltar.png");
+    background-repeat: no-repeat;
+}
+
+#btn-voltar-p-reservadas{
+    left:1190px;
+    top:5px;
+    height:50px;
+    width: 50px;
+    float: right;
+    background-image:url("btn_voltar.png");
+    background-repeat: no-repeat;
+}
+#btn-voltar-p-funcoes{    left:1190px;
+    top:5px;
+    height:50px;
+    width: 50px;
+    float: right;
+    background-image:url("btn_voltar.png");
+    background-repeat: no-repeat;  
+}
+
+#btn_voltar_operadores_atribuicao{
+    position:absolute;   
+    left:1190px;
+    top:5px;
+    height:50px;
+    width: 50px;
+    background-image:url("btn_voltar.png");
+    background-repeat: no-repeat;
+}
+
+
+
