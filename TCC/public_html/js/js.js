@@ -3,6 +3,8 @@ $(document).ready(function () {
     /* MONSTRAR E FECHAR(MAIS OU MENOS)*/
         $("#btn-menos").click(function () {
         $("#div-botoes").hide();
+        $('#btn-menos').corner();
+        $('#btn-mais').corner();
     });
     $("#btn-mais").click(function () {
         $("#div-botoes").show();
@@ -65,30 +67,7 @@ $(document).ready(function () {
     $("#btn-voltar-p-funcoes").click(function () {
         $("#div-inicio").show();
      });
-     
-     
-     /*botoes operador atribuicao*/
-      $("#btn_atribuicao").click(function () {
-        $("#operadores_all").hide();
-    });
-    $("#btn_atribuicao").click(function () {
-        $("#operadores_atribuicao").show();
-    });
-    
-     $("#btn_voltar_operadores_atribuicao").click(function () {
-        $("#operadores_atribuicao").hide();
-    });
-    $("#btn_voltar_operadores_atribuicao").click(function () {
-        $("#operadores_all").show();
-     });
-     
-     
-     
-     
-     /*----------------------------*/
-  
-
-  
+       
     /*VARIAVEIS*/
 
     $("#btn_variaveis").click(function () {
