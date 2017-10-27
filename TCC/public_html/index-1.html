@@ -1,113 +1,104 @@
 <!DOCTYPE html>
-<!--
-Referencia para operadores:
-https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_Operators#operadores_aritmeticos
-
--->
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/js.js" ></script>    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title>TCC</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" type="text/css" href="css_2/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/js_2.js" ></script>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+        
+        
+        
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>TCC</title>
+      
+
+
+
+
     </head>
-    <body style="">      
-        <div id="corpo">
-            <div id="inicio">
-                <h5>Inicio</h5>
-                <button type="button" class="btn btn-default" id="btn_operadores_all">Operadores</button>     
-                <button type="button" class="btn btn-default" id="btn_variaveis">Variaveis</button>  
-                <button type="button" class="btn btn-default" id="btn_variaveis">Objetos</button> 
-                <button type="button" class="btn btn-default" id="btn_funcoes">Funções</button> 
-                <button type="button" class="btn btn-default" id="btn_PReservadas">Palavras Reservadas</button> 
+
+
+    <body>
+        <div id="div-corpo">
+       
+            <div id="div-maisoumenos">
+                                
+                <button id="btn-mais" type="button" class="btn btn-default" >+</button>   
+                              
+                <button id="btn-menos" type="button" class="btn btn-default">-</button> 
             </div>
 
-            <div id="tela" onclick="teste();">
+            <div id="div-botoes">
+
+                <!-- DIV INICIO -->
+                <div id="div-inicio">
+
+                    <button type="button" class="btn btn-primary" id="btn_operadores_all">Operadores</button>            
+                    <button type="button" class="btn btn-success" id="btn_obj">Objetos</button> 
+
+                    <button type="button" class="btn btn-warning" id="btn_p_reservadas">Palavras Reservadas</button> 
+                    <button type="button" class="btn btn-danger" id="btn_funcoes">Funções</button> 
+                </div>
+
+                <!-- DIV OPERADORES -->
+                <div id="operadores_all">
+                    <button id="btn_voltar_operadores"></button>
+
+                    <button type="button" class="btn btn-primary"  id="btn_atribuicao"> Operadores Atribuição</button>     
+                    <button type="button" class="btn btn-primary"  id="btn_comparacao"> Operadores Comparação</button> 
+                    <button type="button" class="btn btn-primary"  id="btn_aritmeticos"> Operadores aritméticos</button>
+                    <button type="button" class="btn btn-primary"  id="btn_logicos"> Operadores lógicos</button>
+                </div>
+                <!-- DIV OBJETOS -->
+                <div id="div-obj">
+                    <button id="btn_voltar_obj"></button>
+
+                    <button type="button" class="btn btn-success" id="btn_"> obj 01</button>     
+                    <button type="button" class="btn btn-success" id="btn_"> obj 02</button> 
+                    <button type="button" class="btn btn-success" id="btn_"> obj 03</button>
+                    <button type="button" class="btn btn-success" id="btn_"> obj 04</button>
+                </div>
+                <!-- DIV PALAVRAS RESERVADAS -->
+                <div id="div-p-reservadas">
+                    <button id="btn-voltar-p-reservadas"></button>
+
+                    <button type="button" class="btn btn-warning" id="btn_"> switch</button>     
+                    <button type="button" class="btn btn-warning" id="btn_"> try</button> 
+                    <button type="button" class="btn btn-warning" id="btn_"> while</button>
+                
+                </div>
+
+                <div id="div-p-funcoes">
+                    <button id="btn-voltar-p-funcoes"></button>
+
+                    <button type="button" class="btn btn-danger" id="btn_"> switch</button>     
+                    <button type="button" class="btn btn-danger" id="btn_"> try</button> 
+                    <button type="button" class="btn btn-danger" id="btn_"> while</button>
+                    <button type="button" class="btn btn-danger" id="btn_"> function</button>
+                </div>
+                
+                
                 
             </div>
-            
-            
-            <div id="operadores_all">
-                
-                
-                <button id="btn_voltar_operadores"></button>
-                <h5>Operadores</h5>
-                <button type="button" class="btn btn-primary" id="btn_atribuicao"> Operadores Atribuição</button>     
-                <button type="button" class="btn btn-primary" id="btn_comparacao"> Operadores Comparação</button> 
-                <button type="button" class="btn btn-primary" id="btn_aritmeticos"> Operadores aritméticos</button>
-                <button type="button" class="btn btn-primary" id="btn_logicos"> Operadores lógicos</button>
-            </div>
-            
-            <div id="operadores_atribuicao">
-                <button id="btn_voltar_operadores_atribuicao"></button>
-                <h5>Operadores Atribuição</h5>
-                <button data-toggle="tool_atribuicao" title="Atribuição" type="button" class="btn btn-primary" id="btn_atribuicao"> =</button>     
-                <button data-toggle="tool_atribuicao" title="Atribuição Soma" type="button" class="btn btn-primary" id="btn_atribuicao_adicao"> +=</button> 
-                <button data-toggle="tool_atribuicao" title="Atribuição Subtração" type="button" class="btn btn-primary" id="btn_atribuicao_subtracao"> -=</button>
-                <button data-toggle="tool_atribuicao" title="Atribuição Multiplicação" type="button" class="btn btn-primary" id="btn_atribuicao_multiplicacao"> *=</button>
-                <button data-toggle="tool_atribuicao" title="Atribuição Divisão" type="button" class="btn btn-primary" id="btn_atribuicao_divisao"> /=</button>
-                <button data-toggle="tool_atribuicao" title="Atribuição Resto" type="button" class="btn btn-primary" id="btn_atribuicao_resto"> %=</button>
-            </div>
-            
-            
 
-
-
-            <div id="operadores">
-                <button id="btn_voltar"></button>
-                <h5>Operadores</h5>
-                <button data-toggle="tool_soma" title="Soma"  type="button" class="btn btn-primary" id="btn_soma" value="Soma">+</button>     
-                <button data-toggle="tool_subtracao" title="Subtracao" type="button" class="btn btn-primary" id="btn_subtracao">-</button> 
-                <button data-toggle="tool_multiplicacao" title="Multiplicacao" type="button" class="btn btn-primary" id="btn_multiplicar">x</button>
-                <button data-toggle="tool_divisao" title="Divisao" type="button" type="button" class="btn btn-primary" id="btn_dividir">/</button>
-                <button data-toggle="tool_igual" title="Igual" type="button" type="button"  type="button" class="btn btn-primary" id="btn_igual">=</button>
-                <button data-toggle="tool_diferente" title="Diferente" type="button" class="btn btn-primary" id="btn_diferente">!=</button>
-                <button data-toggle="tool_maior" title="Maior"  type="button" class="btn btn-primary" id="btn_maior">></button>
-                <button data-toggle="tool_menor" title="Menor" type="button" class="btn btn-primary" id="btn_menor"><</button>
-            </div>
-
-
-
-
-            <div id="variaveis">
-                <button id="btn_voltar_2"></button>
-                <h5>variaveis</h5>
-                <button type="button" class="btn btn-primary" id="btn_string">String</button>     
-                <button type="button" class="btn btn-primary" id="btn_int">Inteiro</button>  
-                <button type="button" class="btn btn-primary" id="btn_booleano">Booleano</button> 
-                <button type="button" class="btn btn-primary" id="btn_char">Char</button>
-                <button type="button" class="btn btn-primary" id="btn_float">Float</button> 
-                <button type="button" class="btn btn-primary" id="btn_long">Long</button> 
-            </div>
 
 
 
 
         </div>
 
-        <!-- Tratamentos-->
         <script>
-            let btn = document.querySelector('#btn_soma');
-            btn.addEventListener("click", function () {
-                alert(btn.value);
-            })
-            function teste(){
-                var x = new String ("texto dentro de texto aspas");
-            //alert("z");
-          //document.tela.write("z");
-        //  tela.document.write("z");
-          tela.document.write("z");
-          	document.writeln(x.fontcolor("#ff0000")+"<br/>");
-                alert(x);
-            //document
-        }
-        
+            var btn = document.getElementsByTagName('button')
+            
 
+            // btn.map(mostrarTela)
         </script>
     </body>
 </html>
