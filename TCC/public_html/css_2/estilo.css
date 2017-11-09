@@ -34,12 +34,13 @@
     position: absolute;
     z-index: -2;
     width: 100%;
-    height: 10%;
+    height: 15%;
     bottom: 0;
-   margin: 0;
+    margin: 0;
     padding: 0;
     opacity: 0.9; 
-  
+
+
 
 }
 #div-inicio{
@@ -51,19 +52,66 @@
     margin: 0;
     padding: 0;
     opacity: 0.6;
+    position: absolute;
+
 }
 #operadores_all{
-   background:#2F4F4F;
+    /* background:#2F4F4F;*/
+    position: absolute;
+
     width: 100%;
-    height:90%;
+    height:100%;
     bottom: 0;
     margin: 0;
     padding: 0;
     opacity: 0.7;
     display:none;
 }
+#operadores_atribuicao{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    display:none;
+}
+#operadores_comparacao{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    display:none;
+}
+#operadores_aritmeticos{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    display:none;
+}
+
+#operadores_logicos{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    display:none;
+}
+
+
 #div-obj{
-   background:#2F4F4F;
+    background:#2F4F4F;
     width: 100%;
     height:90%;
     bottom: 0;
@@ -73,7 +121,7 @@
     display:none;
 }
 #div-p-reservadas{
-   background:#2F4F4F;
+    background:#2F4F4F;
     width: 100%;
     height:90%;
     bottom: 0;
@@ -84,7 +132,7 @@
 }
 
 #div-p-funcoes{
-   background:#2F4F4F;
+    background:#2F4F4F;
     width: 100%;
     height:90%;
     bottom: 0;
@@ -107,23 +155,6 @@ button{
     /*opacity: 0.9;*/
 
 }
-
-
-#operadores_atribuicao{
-    padding: 5px;
-    background:#2F4F4F;
-    height:130px;
-    width:1250px;
-    position:absolute;  
-    display:none;
-    left:20px;
-    top:350px;
-
-}
-
-
-
-
 
 /*buttons voltar*/
 #btn_voltar_operadores{
@@ -167,16 +198,41 @@ button{
 }
 
 #btn_voltar_operadores_atribuicao{
-    position:absolute;   
     left:1190px;
     top:5px;
     height:50px;
     width: 50px;
+    float: right;
     background-image:url("btn_voltar.png");
     background-repeat: no-repeat;
 }
-
-
+#btn_voltar_operadores_comparacao{
+    left:1190px;
+    top:5px;
+    height:50px;
+    width: 50px;
+    float: right;
+    background-image:url("btn_voltar.png");
+    background-repeat: no-repeat;
+}
+#btn_voltar_operadores_aritmeticos{
+    left:1190px;
+    top:5px;
+    height:50px;
+    width: 50px;
+    float: right;
+    background-image:url("btn_voltar.png");
+    background-repeat: no-repeat;
+}
+#btn_voltar_operadores_logicos{
+    left:1190px;
+    top:5px;
+    height:50px;
+    width: 50px;
+    float: right;
+    background-image:url("btn_voltar.png");
+    background-repeat: no-repeat;
+}
 
 /*top nav*/
 .topnav {

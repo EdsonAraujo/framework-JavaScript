@@ -11,7 +11,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/js_2.js" ></script>    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>TCC</title>
     </head>
@@ -64,12 +63,72 @@
 
                     <button id="btn_voltar_operadores"></button>
                     <center>
-                        <button type="button" class="btn btn-primary"  id="btn_atribuicao"> Operadores Atribuição</button>     
-                        <button type="button" class="btn btn-primary"  id="btn_comparacao"> Operadores Comparação</button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao"> Operadores de Atribuição</button>     
+                        <button type="button" class="btn btn-primary"  id="btn_comparacao"> Operadores  de Comparação</button> 
                         <button type="button" class="btn btn-primary"  id="btn_aritmeticos"> Operadores aritméticos</button>
                         <button type="button" class="btn btn-primary"  id="btn_logicos"> Operadores lógicos</button>
+                        <!--https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_Operators#operador_atribuicao-->
                     </center>
                 </div>
+                <!-- DIV OPERADORES  ATRIBUICAO-->
+                <div id="operadores_atribuicao">
+                    <button id="btn_voltar_operadores_atribuicao"></button>
+                    <center>
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO"> = </button>  
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-ADICAO"> += </button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-SUBTRCAO"> -= </button>
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-MULTIPLICACAO"> *= </button>
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-DIVISAO"> /= </button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-RESTO"> %= </button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-EXPONENCIAL"> ** </button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-AND"> &(AND) </button>
+                         <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-OR"> |(OR) </button>
+                      <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-XOR"> ^(XOR) </button>
+                   <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-NOT"> !(NOT) </button>
+                    </center>
+                </div>
+                <!--OPERADORES  COMPARAÇÃO-->
+                 <div id="operadores_comparacao">
+                    <button id="btn_voltar_operadores_comparacao"></button>
+                    <center>
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-IGUAL"> == </button>  
+                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-NAOIGUAL"> != </button> 
+                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MAIOR"> >(MAIOR) </button> 
+                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MAIOROUIGUAL"> >= </button> 
+                   <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MENOR"> <(MENOR) </button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MENOROUIGUAL"> <= </button>
+                    </center>
+                </div>
+                 <!--OPERADORES  ARITMETICOS   -->
+                 <div id="operadores_aritmeticos">
+                    <button id="btn_voltar_operadores_aritmeticos"></button>
+                    <center>
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-MODULO"> %(RESTO) </button>  
+                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-INCREMENTO"> ++ </button>  
+                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-DECREMENTO"> -- </button>  
+                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-NEGACAO"> - </button>  
+                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-ADICAO">+ </button>  
+                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-EXPONENCIACAO"> ** </button>  
+                      
+                    </center>
+                </div>
+                
+                
+ <!--OPERADORES  LOGICOS   -->
+                 <div id="operadores_logicos">
+                    <button id="btn_voltar_operadores_logicos"></button>
+                    <center>
+     <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-AND">&& </button>  
+     <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-OR">|| </button>  
+     <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-NOT">! </button>  
+                         
+                    </center>
+                </div>
+
+
+
+
+
                 <!-- DIV OBJETOS -->
                 <div id="div-obj">
                     <button id="btn_voltar_obj"></button>
