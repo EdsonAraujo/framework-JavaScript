@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css_2/estilo.css"/>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/js_2.js" ></script>    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <title>TCC</title>
     </head>
 
@@ -24,7 +24,7 @@
             <div class="topnav" id="topnavId">
                 <a class="active" href="#home">Home</a>
 
-                <a href="#contact">Contato</a>
+                <a href="#contact">Como usar</a>
                 <a href="#about">Sobre</a>
 
             </div>
@@ -52,9 +52,7 @@
                     <center>
                         <button type="button" class="btn btn-primary" id="btn_operadores_all">Operadores</button>            
                         <button type="button" class="btn btn-success" id="btn_obj">Objetos</button> 
-
-                        <button type="button" class="btn btn-warning" id="btn_p_reservadas">Palavras Reservadas</button> 
-                        <button type="button" class="btn btn-danger" id="btn_funcoes">Funções</button> 
+                        <button type="button" class="btn btn-danger" id="btn_p_reservadas">Palavras Reservadas</button>            
                     </center>
                 </div>
 
@@ -64,9 +62,9 @@
                     <button id="btn_voltar_operadores"></button>
                     <center>
                         <button type="button" class="btn btn-primary"  id="btn_atribuicao"> Operadores de Atribuição</button>     
-                        <button type="button" class="btn btn-primary"  id="btn_comparacao"> Operadores  de Comparação</button> 
+                        <button type="button" class="btn btn-primary"  id="btn_comparacao"> Operadores de Comparação</button> 
                         <button type="button" class="btn btn-primary"  id="btn_aritmeticos"> Operadores aritméticos</button>
-                        <button type="button" class="btn btn-primary"  id="btn_logicos"> Operadores lógicos</button>
+                        <button type="button" class="btn btn-primary"  id="btn_logicos"> Operadores Lógicos</button>
                         <!--https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_Operators#operador_atribuicao-->
                     </center>
                 </div>
@@ -82,46 +80,46 @@
                         <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-RESTO"> %= </button> 
                         <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-EXPONENCIAL"> ** </button> 
                         <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-AND"> &(AND) </button>
-                         <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-OR"> |(OR) </button>
-                      <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-XOR"> ^(XOR) </button>
-                   <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-NOT"> !(NOT) </button>
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-OR"> |(OR) </button>
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-XOR"> ^(XOR) </button>
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_ATRIBUICAO-NOT"> !(NOT) </button>
                     </center>
                 </div>
                 <!--OPERADORES  COMPARAÇÃO-->
-                 <div id="operadores_comparacao">
+                <div id="operadores_comparacao">
                     <button id="btn_voltar_operadores_comparacao"></button>
                     <center>
                         <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-IGUAL"> == </button>  
-                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-NAOIGUAL"> != </button> 
-                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MAIOR"> >(MAIOR) </button> 
-                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MAIOROUIGUAL"> >= </button> 
-                   <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MENOR"> <(MENOR) </button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-NAOIGUAL"> != </button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MAIOR"> >(MAIOR) </button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MAIOROUIGUAL"> >= </button> 
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MENOR"> <(MENOR) </button> 
                         <button type="button" class="btn btn-primary"  id="btn_atribuicao_COMPARACAO-MENOROUIGUAL"> <= </button>
                     </center>
                 </div>
-                 <!--OPERADORES  ARITMETICOS   -->
-                 <div id="operadores_aritmeticos">
+                <!--OPERADORES  ARITMETICOS   -->
+                <div id="operadores_aritmeticos">
                     <button id="btn_voltar_operadores_aritmeticos"></button>
                     <center>
                         <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-MODULO"> %(RESTO) </button>  
-                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-INCREMENTO"> ++ </button>  
-                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-DECREMENTO"> -- </button>  
-                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-NEGACAO"> - </button>  
-                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-ADICAO">+ </button>  
-                       <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-EXPONENCIACAO"> ** </button>  
-                      
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-INCREMENTO"> ++ </button>  
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-DECREMENTO"> -- </button>  
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-NEGACAO"> - </button>  
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-ADICAO">+ </button>  
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-EXPONENCIACAO"> ** </button>  
+
                     </center>
                 </div>
-                
-                
- <!--OPERADORES  LOGICOS   -->
-                 <div id="operadores_logicos">
+
+
+                <!--OPERADORES  LOGICOS   -->
+                <div id="operadores_logicos">
                     <button id="btn_voltar_operadores_logicos"></button>
                     <center>
-     <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-AND">&& </button>  
-     <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-OR">|| </button>  
-     <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-NOT">! </button>  
-                         
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-AND">&& </button>  
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-OR">|| </button>  
+                        <button type="button" class="btn btn-primary"  id="btn_atribuicao_aritmeticos-NOT">! </button>  
+
                     </center>
                 </div>
 
@@ -133,39 +131,47 @@
                 <div id="div-obj">
                     <button id="btn_voltar_obj"></button>
                     <center>
-                        <button type="button" class="btn btn-success" id="btn_"> obj 01</button>     
-                        <button type="button" class="btn btn-success" id="btn_"> obj 02</button> 
-                        <button type="button" class="btn btn-success" id="btn_"> obj 03</button>
-                        <button type="button" class="btn btn-success" id="btn_"> obj 04</button>
+                        <!--https://imasters.com.br/artigo/1966/javascript/hierarquia-de-objetos/?trace=1519021197&source=single-->
+                        <!--https://pt.scribd.com/document/282767398/14-0-Os-Objetos-array-date-e-math-pdf-->
+                        <button type="button" class="btn btn-success" id="btn_obj_window"> Window</button>     
+                        <button type="button" class="btn btn-success" id="btn_obj_document"> Document</button> 
+                        <button type="button" class="btn btn-success" id="btn_obj_navigator"> Navigator</button>
+                        <button type="button" class="btn btn-success" id="btn_obj_location"> Location</button>
+                        <button type="button" class="btn btn-success" id="btn_obj_date"> Date</button>
+                        <button type="button" class="btn btn-success" id="btn_obj_function"> Function</button>
+                        <button type="button" class="btn btn-success" id="btn_obj_math"> Math</button>
+                        <button type="button" class="btn btn-success" id="btn_obj_string"> String</button>
                     </center>
                 </div>
                 <!-- DIV PALAVRAS RESERVADAS -->
                 <div id="div-p-reservadas">
                     <button id="btn-voltar-p-reservadas"></button>
-                    <center>
-                        <button type="button" class="btn btn-warning" id="btn_"> switch</button>     
-                        <button type="button" class="btn btn-warning" id="btn_"> try</button> 
-                        <button type="button" class="btn btn-warning" id="btn_"> while</button>
-                    </center>
+                    
+                       <ul id="lista_c">
+                            <li><button type="button" class="btn btn-danger" id="btn_p-reservadas_for"> For</button></li>
+                            <li><button type="button" class="btn btn-danger" id="btn_p-reservadas_foreach"> Foreach</button></li>
+                            <li><button type="button" class="btn btn-danger" id="btn_p-reservadas_while"> While</button></li>
+                            <li><button type="button" class="btn btn-danger" id="btn_p-reservadas_doWhile">Do While</button></li>
+                        </ul>
+                    </br>
+                        <ul id="lista_c">
+                            <li><button type="button" class="btn btn-warning" id="btn_p-reservadas_if"> If</button></li>
+                            <li><button type="button" class="btn btn-warning" id="btn_p-reservadas_switch"> Switch</button></li>
+                           <li><button type="button" class="btn btn-warning" id="btn_p-reservadas_if"> If</button></li>
+                            <li><button type="button" class="btn btn-warning" id="btn_p-reservadas_switch"> Switch</button></li>
+                        </ul>
+
+                    
                 </div>
 
-                <div id="div-p-funcoes">
-                    <button id="btn-voltar-p-funcoes"></button>
-                    <center>
-                        <button type="button" class="btn btn-danger" id="btn_"> switch</button>     
-                        <button type="button" class="btn btn-danger" id="btn_"> try</button> 
-                        <button type="button" class="btn btn-danger" id="btn_"> while</button>
-                        <button type="button" class="btn btn-danger" id="btn_"> function</button>
-                    </center>
-                </div>
+
             </div>
-        </div>
 
-        <!-- <script>
-             var btn = document.getElementsByTagName('button')
- 
- 
-             // btn.map(mostrarTela)
-         </script>-->
+            <!-- <script>
+                 var btn = document.getElementsByTagName('button')
+     
+     
+                 // btn.map(mostrarTela)
+             </script>-->
     </body>
 </html>

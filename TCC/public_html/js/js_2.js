@@ -116,20 +116,7 @@ $(document).ready(function () {
     $("#btn-voltar-p-reservadas").click(function () {
         $("#div-inicio").show();
     });
-    /*FUNÇÕES*/
-    $("#btn_funcoes").click(function () {
-        $("#div-inicio").hide();
-    });
-    $("#btn_funcoes").click(function () {
-        $("#div-p-funcoes").show();
-    });
-
-    $("#btn-voltar-p-funcoes").click(function () {
-        $("#div-p-funcoes").hide();
-    });
-    $("#btn-voltar-p-funcoes").click(function () {
-        $("#div-inicio").show();
-    });
+   
 
     /*VARIAVEIS*/
 

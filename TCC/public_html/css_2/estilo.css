@@ -123,28 +123,13 @@
 #div-p-reservadas{
     background:#2F4F4F;
     width: 100%;
-    height:90%;
+    height:100%;
     bottom: 0;
     margin: 0;
     padding: 0;
     opacity: 0.7;
     display:none;
 }
-
-#div-p-funcoes{
-    background:#2F4F4F;
-    width: 100%;
-    height:90%;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    opacity: 0.7;
-    display:none;    
-
-}
-
-
-
 
 
 
@@ -187,15 +172,7 @@ button{
     background-image:url("btn_voltar.png");
     background-repeat: no-repeat;
 }
-#btn-voltar-p-funcoes{  
-    left:1190px;
-    top:5px;
-    height:50px;
-    width: 50px;
-    float: right;
-    background-image:url("btn_voltar.png");
-    background-repeat: no-repeat;  
-}
+
 
 #btn_voltar_operadores_atribuicao{
     left:1190px;
@@ -295,4 +272,20 @@ body, #div-corpo{
     margin: 0;
     padding: 0;
 }
-/**/
+/* palavras */
+#lista_repeticoes > li{
+    	float:left;
+        
+}
+#lista_c > li {
+    	float:left;
+}
+
+ul{
+	list-style:none;
+	padding:5px;
+	margin:0;
+}
+li{
+    padding:2px;
+}
